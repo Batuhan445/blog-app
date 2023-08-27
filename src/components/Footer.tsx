@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -8,10 +9,10 @@ export const Footer = () => {
 
         <div className='m-auto md:m-0'>
 
-          <a href="https://x.com/trbatuhankara" target='_blank'>
+          <Link href="https://x.com/trbatuhankara" target='_blank' className='inline-block p-2'>
           <Image 
           src={'/social-media/x-twitter-logo.png'} alt={'x-twitter-logo'} width={20} height={20}/>
-          </a>
+          </Link>
 
         </div>
 
