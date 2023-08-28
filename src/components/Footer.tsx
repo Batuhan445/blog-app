@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const Footer = () => {
   return (
     <div>
-      <div className="fixed bottom-0 h-22 md:h-16 grid md:flex md:justify-between items-center w-full md:px-10 bg-[#091f2c] text-center py-2 md:py-0">
+      <div className="mt-auto grid md:flex md:justify-between items-center w-full md:px-10 bg-[#091f2c] text-center py-3">
 
         <div className='m-auto md:m-0 flex'>
 
