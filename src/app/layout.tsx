@@ -13,16 +13,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body>
+      <body className='bg-gray-900 text-white min-h-screen flex flex-col'>
+
         <Navbar/>
         {children}
         <Footer/>
-        </body>
+
+      </body>
     </html>
   )
 }
