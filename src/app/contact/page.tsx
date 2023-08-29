@@ -20,12 +20,12 @@ const Contact = () => {
         Sosyal Medya :
         </div>
 
-        <div className='grid md:grid-cols-2  gap-y-7 gap-x-20 items-center justify-center md:justify-start md:py-16 text-xl md:text-3xl'>
+        <div className='grid md:grid-cols-2  gap-y-7 gap-x-20 items-center justify-center md:justify-start md:py-16 text-xl lg:text-2xl'>
 
           <div className='mt-3'>
             <Link href={'https://www.linkedin.com/in/batuhankaraahmeto%C4%9Flu/'} target='_blank' style={{display:"flex"}}>
             <Image src={"/social-media/linkedin.png"} alt='linkedin-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-            <div className='m-auto md:m-0 hover:text-blue-400 transition'>
+            <div className='m-auto  hover:text-blue-400 transition'>
               Linkedin
             </div>
             </Link>
@@ -34,7 +34,7 @@ const Contact = () => {
           <div className='mt-3'>
             <Link href={'https://github.com/Batuhan445'} target='_blank' style={{display:"flex"}}>
             <Image src={"/social-media/github.png"} alt='github-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto md:m-0 hover:text-blue-400 transition'>
+          <div className='m-auto  hover:text-blue-400 transition'>
               Github
           </div>
               </Link>
@@ -43,7 +43,7 @@ const Contact = () => {
           <div className='mt-3'>
           <Link href={'https://www.facebook.com/batuhankara.tr/'} target='_blank' style={{display:"flex"}}>
           <Image src={"/social-media/facebook.png"} alt='facebook-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto md:m-0 hover:text-blue-400 transition'>
+          <div className='m-auto  hover:text-blue-400 transition'>
             Facebook
           </div>
           </Link>
@@ -52,7 +52,7 @@ const Contact = () => {
           <div className='mt-3'>
           <Link href={'https://www.x.com/trbatuhankara/'} target='_blank' style={{display:"flex"}}>
           <Image src={"/social-media/x-twitter-logo.png"} alt='x-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto md:m-0 hover:text-blue-400 transition'>
+          <div className='m-auto  hover:text-blue-400 transition'>
             X (Twitter)
           </div>
             </Link>
@@ -62,7 +62,7 @@ const Contact = () => {
           <div className='mt-3'>
           <Link href={'https://www.instagram.com/trbatuhankara/'} target='_blank' style={{display:"flex"}}>
           <Image src={"/social-media/instagram.png"} alt='instagram-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto md:m-0 hover:text-blue-400 transition'>
+          <div className='m-auto  hover:text-blue-400 transition'>
             Instagram
           </div>
             </Link>
