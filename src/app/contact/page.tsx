@@ -6,9 +6,11 @@ const Contact = () => {
   return (
     
     // <div className='flex flex-row items-center flex-1'>
-      <div className='flex-1 grid md:flex md:justify-evenly items-center text-center py-28 md:py-40 w-full'>
+      <div className='min-h-screen'>
         <title>Batuhan Karaahmetoğlu Blog | İletişim</title>
+        <div className='text-center text-3xl mt-10'>İletişim</div>
 
+      <div className='flex-1 grid md:flex md:justify-evenly items-center text-center py-28 md:mt-20'>
         <div>
           <p className='text-2xl md:text-3xl mb-10'>E-posta :</p>
           <a className='hover:underline text-2xl md:text-3xl' href="mailto:neomatrix44@hotmail.com">neomatrix44@hotmail.com</a>
@@ -16,7 +18,7 @@ const Contact = () => {
 
         <div>
 
-        <div className='md:mt-0 mt-10 text-xl md:text-3xl my-5 md:my-0'>
+        <div className='md:mt-0 mt-10 text-2xl md:text-3xl my-5 md:my-0'>
         Sosyal Medya :
         </div>
 
@@ -69,6 +71,7 @@ const Contact = () => {
           </div>
 
 
+          </div>
         </div>
       </div>
 
