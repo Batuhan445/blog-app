@@ -7,7 +7,7 @@ const Projects = () => {
     <div className='min-h-screen'>
         <div className='mt-10 text-3xl text-center'>Projelerim</div>
 
-        <div className='mt-10 grid md:flex w-[70%] m-auto'>
+        <div className='mt-10 grid md:flex w-[80%] m-auto border'>
             <Image src={"/projects/university-web.jpg"} 
             style={{borderRadius:"10px"}} 
             alt={'universite-web-site'} 
@@ -18,12 +18,11 @@ const Projects = () => {
             <h1 className='text-xl font-bold'>Üniversite Web Sitesi</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, maxime nulla ab, veniam minus debitis in optio, aperiam sed quod id quaerat ratione hic consectetur.</p>
 
-          <div className='mt-10'>
+          <div className='mx-auto md:mx-0 mt-10 w-28'>
             <Link 
             href={'https://calm-gumdrop-f04589.netlify.app/'} 
             target='_blank'
-            className='border w-28 p-3 mr-auto rounded transition text-center hover:bg-blue-500 hover:border-blue-500'
-            style={{marginTop:"16px"}}
+            className='border p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500'
             >
               Ziyaret Edin
             </Link>
