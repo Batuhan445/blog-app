@@ -46,27 +46,38 @@ const Navbar = () => {
 
         </div>
 
-        <div
-          className={`md:hidden fixed top-0 right-0 h-screen w-2/4 bg-gray-500 text-white p-6 transform transition-transform ${
-            navbarOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-        >
-          <div className='flex justify-center flex-col'>
-            <button
-              onClick={closeNavbar}
-              className="ml-auto my-auto p-2 text-white text-2xl"
+
+        <div className="md:hidden">
+            {navbarOpen && (
+              <div
+                className="fixed top-0 left-0 w-full h-full transform duration-1000 transition-transform bg-black opacity-50"
+                onClick={closeNavbar}
+              ></div>
+            )}
+
+            <div
+              className={`fixed top-0 right-0 h-screen w-2/4 bg-gray-500 shadow-lg shadow-zinc-600 text-white p-6 transform duration-1000 transition-transform ${
+                navbarOpen ? "translate-x-0" : "translate-x-full"
+              }`}
             >
-              <FaTimes />
-            </button>
-            {Links.map(link => (
-              <div className='mr-auto mt-2' key={link.to}>
-                <Link href={link.to} onClick={closeNavbar}>
-                  {link.name}
-                </Link>
+              <div className="flex justify-center flex-col">
+                <button
+                  onClick={closeNavbar}
+                  className="ml-auto my-auto p-2 text-white text-2xl"
+                >
+                  <FaTimes />
+                </button>
+                {Links.map((link) => (
+                  <div className="mr-auto mt-2" key={link.to}>
+                    <Link href={link.to} onClick={closeNavbar}>
+                      {link.name}
+                    </Link>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+
 
         <div className='hidden md:flex md:space-x-4'>
           {Links.map(link => (
