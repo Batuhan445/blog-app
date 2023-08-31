@@ -50,7 +50,7 @@ const Projects = () => {
             <div className="m-auto text-center md:text-left md:mr-6">
               <h1 className="font-bold text-xl">Prime Properties</h1>
               <p>
-                Bu proje'de ilk kez React kullandım ve Tailwind CSS'te içeriyor. Sadece input bölümünde Javascript
+                Bu projede ilk kez React kullandım ve Tailwind CSSte içeriyor. Sadece input bölümünde Javascript
                 kullanılmıştır.
               </p>
             </div>
@@ -96,7 +96,7 @@ const Projects = () => {
             <div className="text-center md:text-left mt-4 md:mt-0">
                 <h1 className="font-bold text-xl">Epic Mix</h1>
                 <p>
-                  Javascript olarak kullandığım ilk projemdir. "Show Me!" butonuna tıklandığında
+                  Javascript olarak kullandığım ilk projemdir. Show Me! butonuna tıklandığında
                   şarkıların listesi gözükmektedir. Şarkı ekleme konusunda sadece YouTube linki şartı koşulmuştur.
                   YouTube dışında bir link olursa uyarı vermektedir. Silmek isterseniz uyarı çıkıyor ve 
                   sildikten sonra listenin sayısı güncelleniyor.
