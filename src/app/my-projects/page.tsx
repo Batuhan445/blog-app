@@ -94,7 +94,7 @@ const Projects = () => {
               <div className="ml-0 m-auto md:ml-6">
 
             <div className="text-center md:text-left mt-4 md:mt-0">
-                <h1 className="font-bold text-lg">Epic Mix</h1>
+                <h1 className="font-bold text-xl">Epic Mix</h1>
                 <p>
                   Javascript olarak kullandığım ilk projemdir. "Show Me!" butonuna tıklandığında
                   şarkıların listesi gözükmektedir. Şarkı ekleme konusunda sadece YouTube linki şartı koşulmuştur.
