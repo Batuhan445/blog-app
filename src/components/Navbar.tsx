@@ -50,13 +50,13 @@ const Navbar = () => {
         <div className="md:hidden">
             {navbarOpen && (
               <div
-                className="fixed top-0 left-0 w-full h-full transform duration-1000 transition-transform bg-black opacity-50"
+                className="fixed  top-0 left-0 w-full h-full transform duration-1000 transition-transform bg-black opacity-50"
                 onClick={closeNavbar}
               ></div>
             )}
 
             <div
-              className={`fixed top-0 right-0 h-screen w-2/4 bg-gray-500 shadow-lg shadow-zinc-600 text-white p-6 transform duration-1000 transition-transform ${
+              className={`fixed z-10 top-0 right-0 h-screen w-2/4 bg-gray-500 shadow-lg shadow-zinc-600 text-white p-6 transform duration-1000 transition-transform ${
                 navbarOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
