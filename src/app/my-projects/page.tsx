@@ -1,101 +1,155 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CiShare1 } from 'react-icons/ci'
 
 const Projects = () => {
   return (
     <div className="min-h-screen">
       <title>Batuhan Karaahmetoğlu Blog | Projelerim</title>
 
-      <div className="mt-10 text-3xl text-center">Projelerim</div>
+      <div className="my-10 text-3xl text-center">Projelerim</div>
 
-      <div className="grid">
-
-        <div className="mt-10 md:flex w-[70%] m-auto">
+        <div className="grid">
 
           <div className="m-auto">
+          
             <Image
               src={"/projects/university-web.jpg"}
-              style={{ borderRadius: "10px" }}
+              style={{ objectFit:"contain", borderRadius: "10px" }}
               alt={"universite-web-site"}
               width={720}
               height={720}
+              className="w-[90%] m-auto"
+              
             />
           </div>
 
-          <div className="ml-0 m-auto md:ml-6">
-            <div className="text-center md:text-left mt-4 md:mt-0">
+          <div className="m-auto">
+            <div className="text-center mt-4">
               <h1 className="text-xl font-bold">Üniversite Web Sitesi</h1>
-              <p>
+              <p className="w-[80%] lg:w-full m-auto">
                 Bu sitede HTML ve CSS kullandım. Butona tıklayarak scroll ve fotoğrafın üzerine getirdiğinizde hover özelliği ile ülkelerin
-                isimleri yazıyor
+                isimleri yazıyor.
               </p>
             </div>
 
-            <div className="mx-auto md:mx-0 mt-8 w-28">
+            <div className="m-auto w-36 mt-8  rounded ">
               <Link
                 href={"https://calm-gumdrop-f04589.netlify.app/"}
                 target="_blank"
-                className="border p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500"
+                className="flex justify-center border items-center p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500"
               >
                 Ziyaret Edin
+                <div className="ml-2">
+                <CiShare1/>
+                </div>
               </Link>
             </div>
           </div>
 
         </div>
 
-        <div className="mt-10 flex-col-reverse flex md:flex-row w-[70%] m-auto">
-          <div className="mt-6 md:m-auto">
-            <div className="m-auto text-center md:text-left md:mr-6">
-              <h1 className="font-bold text-xl">Prime Properties</h1>
-              <p>
+        <div className="mt-10 grid m-auto">
+
+          <div className="m-auto">
+          
+            <Image
+              src={"/projects/epic-mix.jpg"}
+              style={{ borderRadius: "10px", objectFit:"contain" }}
+              alt={"universite-web-site"}
+              width={720}
+              height={720}
+              className="w-[90%] m-auto"
+              
+            />
+          </div>
+
+          <div className="m-auto">
+            <div className="text-center mt-4">
+              <h1 className="text-xl font-bold">Epic Mix</h1>
+              <p className="w-[80%] m-auto">
+              Javascript olarak kullandığım ilk projemdir. Show Me! butonuna tıklandığında
+                  şarkıların listesi gözükmektedir. Şarkı ekleme konusunda sadece YouTube linki şartı koşulmuştur.
+                  YouTube dışında bir link olursa uyarı vermektedir. Silmek isterseniz uyarı çıkıyor ve 
+                  sildikten sonra listenin sayısı güncelleniyor.
+              </p>
+            </div>
+
+            <div className="m-auto w-36 mt-8 rounded">
+            <Link
+                href={"https://willowy-belekoy-d5e574.netlify.app/"}
+                target="_blank"
+                className="flex justify-center border items-center p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500"
+              >
+                Ziyaret Edin
+                <div className="ml-2">
+                <CiShare1/>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="mt-16 grid m-auto">
+
+        <div className="m-auto">
+            <Image
+              src={"/projects/prime-properties.jpg"}
+              style={{ borderRadius: "10px", objectFit:"contain" }}
+              alt={"universite-web-site"}
+              width={720}
+              height={720}
+              className="w-[90%] m-auto"
+            />
+          </div>
+
+          <div className="m-auto">
+            <div className="m-auto text-center">
+              <h1 className="font-bold text-xl mt-6">Prime Properties</h1>
+              <p className="w-[80%] m-auto">
                 Bu projede ilk kez React kullandım ve Tailwind CSSte içeriyor. Sadece input bölümünde Javascript
                 kullanılmıştır.
               </p>
             </div>
 
-            <div className="mx-auto md:mx-0 mt-8 w-28">
+            <div className="mx-auto w-36 my-8 rounded">
               <Link
                 href={"https://mellifluous-profiterole-ba5e3a.netlify.app/"}
                 target="_blank"
-                className="border p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500"
+                className="border flex justify-center items-center p-3 rounded transition text-center hover:bg-blue-500 hover:border-blue-500"
               >
                 Ziyaret Edin
+                <div className="ml-2">
+                <CiShare1/>
+                </div>
               </Link>
             </div>
+            
           </div>
 
-          <div className="m-auto">
-            <Image
-              src={"/projects/prime-properties.jpg"}
-              style={{ borderRadius: "10px" }}
-              alt={"universite-web-site"}
-              width={720}
-              height={720}
-            />
-          </div>
+          
         </div>
 
-        <div className="md:flex mt-10 w-[70%] py-5 m-auto">
+        {/* <div className="mt-10 lg:flex m-auto">
           
-          <div className="m-auto">
+          <div className="m-auto relative w-[90%] h-48">
             <Image
               src={"/projects/epic-mix.jpg"}
-              style={{ borderRadius: "10px" }}
+              style={{ borderRadius: "10px", objectFit:"contain" }}
               alt={"universite-web-site"}
-              width={720}
-              height={720}
+              fill
             />
           </div>
 
-          <div className="mt-6 md:m-auto">
+          <div className="mt-6 lg:m-auto">
 
-              <div className="ml-0 m-auto md:ml-6">
+              <div className="ml-0 m-auto lg:ml-6">
 
-            <div className="text-center md:text-left mt-4 md:mt-0">
+            <div className="text-center lg:text-left mt-4 lg:mt-0">
                 <h1 className="font-bold text-xl">Epic Mix</h1>
-                <p>
+                <p className="w-[80%] m-auto lg:w-auto">
                   Javascript olarak kullandığım ilk projemdir. Show Me! butonuna tıklandığında
                   şarkıların listesi gözükmektedir. Şarkı ekleme konusunda sadece YouTube linki şartı koşulmuştur.
                   YouTube dışında bir link olursa uyarı vermektedir. Silmek isterseniz uyarı çıkıyor ve 
@@ -104,7 +158,7 @@ const Projects = () => {
             </div>
               
 
-              <div className="mx-auto md:mx-0 mt-8 w-28">
+              <div className="mx-auto lg:mx-0 mt-8 w-28">
                 <Link
                   href={"https://willowy-belekoy-d5e574.netlify.app/"}
                   target="_blank"
@@ -118,9 +172,9 @@ const Projects = () => {
           </div>
 
 
-        </div>
+        </div> */}
 
-      </div>
+      
 
     </div>
   );
