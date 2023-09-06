@@ -36,8 +36,10 @@ const HomePage = () => {
           <li>- Typescript</li>
         </ol>
 
+    <div className='mb-10'>
         <h1 className='font-bold text-2xl mt-8'>Eğitim Hayatım</h1>
         <p>Lise : (2014 - 2018)</p>
+    </div>
       </div>
 
 
