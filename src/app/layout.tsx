@@ -18,7 +18,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body className='bg-gray-900 text-white min-h-screen flex flex-col'>
+      <body className='bg-gray-700 text-white min-h-screen flex flex-col'>
 
         <Navbar/>
         {children}
