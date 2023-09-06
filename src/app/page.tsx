@@ -33,6 +33,7 @@ const HomePage = () => {
           <li>- React</li>
           <li>- Next.JS</li>
           <li>- Tailwind CSS</li>
+          <li>- Typescript</li>
         </ol>
 
         <h1 className='font-bold text-2xl mt-8'>Eğitim Hayatım</h1>
