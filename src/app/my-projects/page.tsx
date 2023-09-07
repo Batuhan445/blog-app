@@ -174,6 +174,7 @@ const Projects = () => {
 
         <ScrollToTop
         className="flex justify-center items-center transition"
+        style={{boxShadow:"none", bottom:"50px"}}
         smooth/>
 
       
