@@ -3,29 +3,29 @@ import Image from 'next/image'
 
 const HomePage = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen bg-white text-black'>
       <div className='text-center text-4xl my-10'>
-      Batuhan Karaahmetoğlu Blog Sayfasına Hoşgeldiniz
+      Blog Sayfama Hoşgeldiniz
       </div>
 
-      <div className='mt-8'>
+      <div className='m-auto w-auto'>
         <Image 
         src={"/portfoilo.jpg"} 
+        style={{ borderRadius: "10px", objectFit: "contain"}} 
         alt={"portfoilo"} 
-        style={{objectFit:"contain", borderRadius:"10px"}} 
         width={720}
         height={720}
-        className="w-[90%] h-48 lg:h-96 m-auto "
-        ></Image>
+        className="w-[50%] h-48 lg:h-96 m-auto"
+        />
       </div>
 
-      <div className='mt-8 w-[80%] m-auto'>
-        <h1 className='font-bold text-2xl'>Ben Kimim?</h1>
+      <div className='mt-8 w-[80%] text-center m-auto'>
+        <h1 className='font-bold text-2xl'>Hakkımda</h1>
         <p>Frontend Öğreniyorum. 2021 yılında Clarusway üzerinden frontend kursu aldım.
           Hobi olarak ise oyun oynarım
         </p>
 
-        <h1 className='font-bold text-2xl mt-8'>Öğrendiğim Yazılım Kodları</h1>
+        <h1 className='font-bold text-2xl mt-8'>Kullandığım Teklonojiler</h1>
         <ol className='mt-2'>
           <li>- HTML</li>
           <li>- CSS</li>
@@ -37,7 +37,7 @@ const HomePage = () => {
         </ol>
 
     <div className='mb-10'>
-        <h1 className='font-bold text-2xl mt-8'>Eğitim Hayatım</h1>
+        <h1 className='font-bold text-2xl mt-8'>Sertifikalarım</h1>
         <p>Lise : (2014 - 2018)</p>
     </div>
       </div>
