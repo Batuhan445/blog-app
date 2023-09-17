@@ -1,17 +1,23 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 import { Merriweather_Sans } from "next/font/google";
-import { useRouter } from 'next/navigation'
+import { usePathname } from "next/navigation"
 
 const merriweatherSans = Merriweather_Sans({ subsets: ["latin"] });
 
 const Navbar = () => {
 
-  const router = useRouter()
+  const pathname = usePathname()
   const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    const currentPathname = pathname;
+    const activeLink = Links.find((link) => link.to === currentPathname);
+    setActiveLink(activeLink ? activeLink.name : "");
+  }, [pathname]);
 
   // Navbar Links
 
@@ -126,7 +132,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               href={link.to}
-              className={`hover:text-white transition ${
+              className={`hover:opacity-100 transition ${
                 activeLink === link.name ? "opacity-100" : "opacity-50"
               }`}
               onClick={() => setActiveLink(link.name)}
