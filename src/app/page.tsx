@@ -27,9 +27,11 @@ const HomePage = () => {
 
       <div className='mt-8 w-[80%] text-center m-auto'>
         <h1 className='font-bold text-2xl mb-3'>Hakkımda</h1>
-        <p>Ben Batuhan Karaahmetoğlu. Frontend Developer olma yolunda gidiyorum.</p>
-        <p className='my-4 md:my-0'>Amerika merkezli Clarusway şirketinden 2020 - 2021 yılında kursu alarak olarak süreci ilerlettim.</p>
-        <p>Şu anda ise Frontend üzerinde projeler yaparak kendimi ilerlettiriyorum</p>
+        <p>Ben Batuhan Karaahmetoğlu ve Frontend Developer olma yolunda ilerliyorum. Amerika merkezli 
+           Clarusway şirketinden 2020-2021 yıllarında aldığım kursla bu süreci hızlandırdım.
+           Şu anda, Frontend konusunda projeler geliştirerek kendimi sürekli olarak geliştiriyorum. 
+           Kendi yeteneklerimi artırmak için büyük bir tutku ve motivasyona sahibim.</p>
+        
 
         <h1 className='font-bold text-2xl mt-8'>Kullandığım Teklonojiler</h1>
         <ol className='mt-2 w-32 text-left m-auto'>
