@@ -26,8 +26,8 @@ const HomePage = () => {
       
 
       <div className='mt-8 w-[80%] text-center m-auto'>
-        <h1 className='font-bold text-2xl'>Hakkımda</h1>
-        <p>Herkese Merhaba. Ben Batuhan Karaahmetoğlu. Frontend Developer olma yolunda gidiyorum.</p>
+        <h1 className='font-bold text-2xl mb-3'>Hakkımda</h1>
+        <p>Ben Batuhan Karaahmetoğlu. Frontend Developer olma yolunda gidiyorum.</p>
         <p className='my-4 md:my-0'>Amerika merkezli Clarusway şirketinden 2020 - 2021 yılında kursu alarak olarak süreci ilerlettim.</p>
         <p>Şu anda ise Frontend üzerinde projeler yaparak kendimi ilerlettiriyorum</p>
 
