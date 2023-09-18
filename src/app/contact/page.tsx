@@ -13,8 +13,8 @@ const Contact = () => {
       <div className='flex-1 grid items-center text-center mt-20'>
 
         <div className='flex m-auto mb-9'>
-          <Image src={"/social-media/email.png"} alt='email' width={45} height={20} className='mr-6'/>
-          <a className='hover:underline text-2xl md:text-3xl mb-1' href="mailto:neomatrix44@hotmail.com">neomatrix44@hotmail.com</a>
+          <Image src={"/social-media/email.png"} alt='email' width={50} height={40} className='mr-4'/>
+          <a className='hover:underline text-xl md:text-3xl mb-1' href="mailto:neomatrix44@hotmail.com">neomatrix44@hotmail.com</a>
         </div>
 
         <div className='flex m-auto mb-9'>
