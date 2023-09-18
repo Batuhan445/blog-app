@@ -1,11 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Merriweather_Sans } from 'next/font/google';
+
+const merriweatherSans = Merriweather_Sans({ subsets: ["latin"] });
 
 export const Footer = () => {
   return (
     <div>
-      <div className="mt-auto grid md:flex md:justify-between items-center w-full md:px-10 bg-[#091f2c] text-center py-3">
+      <div className={`mt-auto grid md:flex md:justify-between items-center w-full md:px-10 bg-[#091f2c] text-center py-3 ${merriweatherSans.className}`}>
 
         <div className='m-auto md:m-0 flex'>
 
