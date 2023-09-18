@@ -35,7 +35,7 @@ const Projects = () => {
             <div className="text-center mt-4">
               <h1 className="text-xl font-bold">Üniversite Web Sitesi</h1>
               <p className="w-[80%] m-auto">
-              Bu web sitesinde HTML ve CSS kullanarak çalıştım. Sayfa üzerindeki "Enroll Now" 
+              Bu web sitesinde HTML ve CSS kullanarak çalıştım. Sayfa üzerindeki Enroll Now 
               butonuna tıkladığınızda, sayfa aşağı kayarak kampüsleri görüntüler ve kampüslerin 
               üzerine geldiğinizde ülkelerin isimlerini gösteren bir hover efekti ekledik.
               </p>
@@ -115,8 +115,8 @@ const Projects = () => {
             <div className="m-auto text-center">
               <h1 className="font-bold text-xl mt-6">Prime Properties</h1>
               <p className="w-[80%] m-auto">
-              Bu projede React'i ilk defa kullandım ve içinde Tailwind CSS kullanıldı. 
-              Sadece iletişim'in mesaj bölümünde JavaScript kullanıldı.
+              Bu projede React yazılımını ilk defa kullandım ve içinde Tailwind CSS kullanıldı. 
+              Sadece iletişim sekmesinin mesaj bölümünde JavaScript kullanıldı.
               </p>
             </div>
 
