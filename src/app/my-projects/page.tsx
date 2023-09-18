@@ -76,7 +76,7 @@ const Projects = () => {
             <div className="text-center mt-4">
               <h1 className="text-xl font-bold">Epic Mix</h1>
               <p className="w-[80%] m-auto">
-              İlk JavaScript projesimdir. Bir düğmeye tıkladığınızda, şarkıların bir listesi görüntülenir. 
+              İlk JavaScript projemdir. Bir düğmeye tıkladığınızda, şarkıların bir listesi görüntülenir. 
               Yalnızca YouTube bağlantıları eklemeye izin verilir, başka bir tür bağlantı eklerseniz uyarı alırsınız. 
               Şarkıları silme seçeneği sunulur ve silindiğinde liste otomatik olarak güncellenir.
               </p>
