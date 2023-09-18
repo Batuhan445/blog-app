@@ -50,7 +50,7 @@ const Navbar = () => {
 
       <div className="flex">
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleNavbar}>
             <Image
               src={"/hamburger-menu.png"}
@@ -65,7 +65,7 @@ const Navbar = () => {
 
         {/* Mobile Navbar Open Background */}
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {navbarOpen && (
             <div
               className="fixed top-0 left-0 w-full h-full transform duration-1000 transition-transform bg-black opacity-50"
@@ -122,7 +122,7 @@ const Navbar = () => {
 
       {/* Desktop Navbar Links */}
 
-        <div className="hidden md:flex md:space-x-10">
+        <div className="hidden lg:flex lg:space-x-10">
 
           {Links.map((link) => (
             <Link
