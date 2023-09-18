@@ -15,7 +15,7 @@ const HomePage = () => {
       </div>
 
       
-      <div className='m-auto w-[25rem] md:w-[30rem]'>
+      <div className='m-auto w-[22rem] md:w-[30rem]'>
         <img 
         src="/software.jpg" 
         style={{ borderRadius: "20px", objectFit: "contain", width: "100%", height: "100%" }} 
