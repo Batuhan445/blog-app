@@ -1,81 +1,41 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { Work_Sans } from 'next/font/google'
+
+const workSans = Work_Sans({subsets: ["latin"]})
 
 const Contact = () => {
   return (
-    
-    // <div className='flex flex-row items-center flex-1'>
-      <div className='min-h-screen'>
+    <div className={`h-screen ${workSans.className}`}>
         <title>Batuhan Karaahmetoğlu Blog | İletişim</title>
-        <div className='text-center text-3xl mt-10'>İletişim</div>
 
-      <div className='flex-1 grid md:flex md:justify-evenly items-center text-center py-28 md:mt-20'>
-        <div>
-          <p className='text-2xl md:text-3xl mb-10'>E-posta :</p>
-          <a className='hover:underline text-2xl md:text-3xl' href="mailto:neomatrix44@hotmail.com">neomatrix44@hotmail.com</a>
+      <div className='flex-1 grid items-center text-center mt-20'>
+
+        <div className='flex m-auto mb-9'>
+          <Image src={"/social-media/email.png"} alt='email' width={45} height={20} className='mr-6'/>
+          <a className='hover:underline text-2xl md:text-3xl mb-1' href="mailto:neomatrix44@hotmail.com">neomatrix44@hotmail.com</a>
         </div>
 
-        <div>
-
-        <div className='md:mt-0 mt-10 text-2xl md:text-3xl my-5 md:my-0'>
-        Sosyal Medya :
+        <div className='flex m-auto mb-9'>
+          <Image src={"/social-media/whatsapp.png"} alt='whatsapp' width={45} height={40} className='mr-6'/>
+          <Link href={"https://wa.me/05531344902"} target='_blank' className='text-2xl md:text-3xl mb-1 m-auto'>Whatsapp</Link>
         </div>
 
-        <div className='grid md:grid-cols-2  gap-y-7 gap-x-20 items-center justify-center md:justify-start md:py-16 text-xl lg:text-2xl'>
-
-          <div className='mt-3'>
-            <Link href={'https://www.linkedin.com/in/batuhankaraahmeto%C4%9Flu/'} target='_blank' style={{display:"flex"}}>
-            <Image src={"/social-media/linkedin.png"} alt='linkedin-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-            <div className='m-auto  hover:text-blue-400 transition'>
-              Linkedin
-            </div>
-            </Link>
-          </div>
-          
-          <div className='mt-3'>
-            <Link href={'https://github.com/Batuhan445'} target='_blank' style={{display:"flex"}}>
-            <Image src={"/social-media/github.png"} alt='github-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto  hover:text-blue-400 transition'>
-              Github
-          </div>
-              </Link>
-          </div>
-
-          <div className='mt-3'>
-          <Link href={'https://www.facebook.com/batuhankara.tr/'} target='_blank' style={{display:"flex"}}>
-          <Image src={"/social-media/facebook.png"} alt='facebook-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto  hover:text-blue-400 transition'>
-            Facebook
-          </div>
-          </Link>
-          </div>
-
-          <div className='mt-3'>
-          <Link href={'https://www.x.com/trbatuhankara/'} target='_blank' style={{display:"flex"}}>
-          <Image src={"/social-media/x-twitter-logo.png"} alt='x-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto  hover:text-blue-400 transition'>
-            X (Twitter)
-          </div>
-            </Link>
-
-          </div>
-
-          <div className='mt-3'>
-          <Link href={'https://www.instagram.com/trbatuhankara/'} target='_blank' style={{display:"flex"}}>
-          <Image src={"/social-media/instagram.png"} alt='instagram-logo' width={40} height={40} style={{marginRight:"15px"}}/>
-          <div className='m-auto  hover:text-blue-400 transition'>
-            Instagram
-          </div>
-            </Link>
-          </div>
-
-
-          </div>
+        <div className='flex m-auto mb-9'>
+        <Image src={"/social-media/linkedin.png"} alt='linkedin' width={45} height={40} className='mr-6'/>
+          <Link href={"https://www.linkedin.com/in/batuhankaraahmeto%C4%9Flu/"} target='_blank' className='text-2xl md:text-3xl mb-1 m-auto'>Linkedin</Link>
         </div>
+
+
+        <div className='flex m-auto'>
+        <Image src={"/social-media/github.png"} alt='linkedin' width={45} height={40} className='mr-6'/>
+          <Link href={"https://github.com/Batuhan445"} target='_blank' className='text-2xl md:text-3xl mb-1 m-auto'>Github</Link>
+        </div>
+
       </div>
 
-      </div>
+    </div>
 
     
   )
