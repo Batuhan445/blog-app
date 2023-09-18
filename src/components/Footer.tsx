@@ -14,13 +14,13 @@ export const Footer = () => {
 
         <div>
           <Link href="https://github.com/Batuhan445" target='_blank' className='inline-block p-2'>
-          <Image src={"/social-media/github.png"} alt='github-logo' width={24} height={24}/>
+          <Image src={"/social-media/github-white.png"} alt='github-logo' width={24} height={24}/>
           </Link>
         </div>
         
           <div>
             <Link href="https://www.linkedin.com/in/batuhankaraahmeto%C4%9Flu/" target='_blank' className='inline-block p-2'>
-            <Image src={"/social-media/linkedin.png"} alt='linkedin-logo' width={24} height={24}/>
+            <Image src={"/social-media/linkedin-white.png"} alt='linkedin-logo' width={24} height={24}/>
             </Link>
           </div>
 
