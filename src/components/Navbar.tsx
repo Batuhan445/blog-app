@@ -23,11 +23,7 @@ const Navbar = () => {
 
   let Links = [
     { name: "Ana Sayfa", to: "/", Image: "/navbar-icons/home.png" },
-    {
-      name: "Projelerim",
-      to: "/my-projects",
-      Image: "/navbar-icons/projects.png",
-    },
+    { name: "Projelerim", to: "/my-projects", Image: "/navbar-icons/projects.png" },
     { name: "İletişim", to: "/contact", Image: "/navbar-icons/contact.png" },
   ];
 
